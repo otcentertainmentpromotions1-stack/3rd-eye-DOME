@@ -1,0 +1,12 @@
+{
+  "previewPort": 3000,
+  "healthPath": "/",
+  "startCommand": "docker compose -f docker-compose.base44.yml up -d",
+  "secrets": [
+    {
+      "name": "GOOGLE_GENKIT_API_KEY",
+      "description": "Google AI Studio (Gemini) API key from https://aistudio.google.com/app/apikey. Powers the Genkit flows on /forecasting and the manipulation check on /data-entry. The app boots and every page renders without it; only those AI calls fail until a real key is provided.",
+      "requiredAtBoot": false
+    }
+  ]
+}
